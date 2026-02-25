@@ -5,31 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pavimentación Ariel López</title>
   <style>
+    /* --- Estilos generales --- */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: white;
+      background-color: #000000; /* fondo negro */
+      color: #ffffff; /* texto blanco */
     }
 
+    h1, h2, h3 {
+      color: #ffffff; /* títulos blancos por defecto */
+      margin: 0;
+    }
+
+    /* --- Header --- */
     header {
-      background: #ffffff;
+      background: #000000;
       padding: 60px 20px;
       text-align: center;
-      border-bottom: 5px solid #ffc400;
+      border-bottom: 5px solid #ffc400; /* borde amarillo como detalle */
     }
 
-    h1 {
-      margin: 0;
-      font-size: 42px;
+    header h1 {
+      color: #ffc400; /* título principal amarillo */
+    }
+
+    header p {
       color: #ffffff;
+      font-size: 18px;
     }
 
+    /* --- Secciones --- */
     section {
       padding: 50px 20px;
       text-align: center;
     }
 
+    /* --- Servicios --- */
     .servicios {
       display: flex;
       flex-wrap: wrap;
@@ -38,17 +50,20 @@
     }
 
     .card {
-      background: #ffffff;
+      background: #111111; /* gris oscuro */
       padding: 25px;
       width: 260px;
       border-radius: 10px;
-      border: 2px solid #ffc400;
+      border: 2px solid #ffc400; /* borde amarillo para resaltar */
+      text-align: center;
     }
 
     .card h3 {
-      color: #ffffff;
+      margin-bottom: 10px;
+      color: #ffc400; /* títulos de servicios en amarillo */
     }
 
+    /* --- Galería --- */
     .galeria {
       display: flex;
       flex-wrap: wrap;
@@ -59,26 +74,50 @@
     .galeria img {
       width: 300px;
       border-radius: 10px;
-      border: 3px solid #ffc400;
+      border: 3px solid #ffc400; /* borde amarillo */
     }
 
+    /* --- Botón WhatsApp --- */
     .btn {
       display: inline-block;
       margin-top: 25px;
       padding: 15px 30px;
-      background: #ffffff;
-      color: black;
+      background: #ffc400; /* botón amarillo */
+      color: #000000; /* texto negro */
       text-decoration: none;
       border-radius: 30px;
       font-weight: bold;
+      border: 2px solid #ffffff;
+      transition: all 0.3s;
     }
 
+    .btn:hover {
+      background: #000000;
+      color: #ffc400;
+      border: 2px solid #ffc400;
+    }
+
+    /* --- Footer --- */
     footer {
-      background: #ffffff;
+      background: #000000;
       padding: 20px;
       text-align: center;
       border-top: 5px solid #ffc400;
+      color: #ffffff;
     }
+
+    /* --- Adaptabilidad móvil --- */
+    @media (max-width: 768px) {
+      .servicios, .galeria {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card, .galeria img {
+        width: 90%;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -109,10 +148,10 @@
 <section>
   <h2>Trabajos Realizados</h2>
   <div class="galeria">
-     <img src="2af99153-22c1-41c6-9915-f42677c94fd8.jpg" alt="Trabajo 1">
-  <img src="2d34b52a-b396-4f4d-994d-9cc3ca661109.jpg" alt="Trabajo 2">
-  <img src="8e2e3501-03d2-4e86-beda-484c869a1889.jpg" alt="Trabajo 3">
-  <img src="54688da5-3f4c-41e5-8a2c-f1c823772c94.jpg" alt="Trabajo 4">
+    <img src="2af99153-22c1-41c6-9915-f42677c94fd8.jpg" alt="Trabajo 1">
+    <img src="2d34b52a-b396-4f4d-994d-9cc3ca661109.jpg" alt="Trabajo 2">
+    <img src="8e2e3501-03d2-4e86-beda-484c869a1889.jpg" alt="Trabajo 3">
+    <img src="54688da5-3f4c-41e5-8a2c-f1c823772c94.jpg" alt="Trabajo 4">
   </div>
 </section>
 
